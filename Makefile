@@ -1,4 +1,5 @@
-FLAGS+= -Wall -I.
+# Second -I should not be necessary; TODO: find a fix
+FLAGS+= -Wall -I. -I/usr/include/lua5.1 -llua5.1 -lm
 EXEC=sona
 
 SRCDESKTOP = $(wildcard src/*.c)
