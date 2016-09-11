@@ -1,5 +1,5 @@
 # Second -I should not be necessary; TODO: find a fix
-FLAGS+= -Wall -I. -I/usr/include/lua5.1 -llua5.1 -lm
+FLAGS+= -Wall -I. -I/usr/include/lua5.1 -llua5.1 -lm -std=c99
 EXEC=sona
 
 SRCDESKTOP = $(wildcard src/*.c)
